@@ -11,6 +11,7 @@ namespace WebApplication1.Controllers
     [Route("api/[controller]")]
     public class UsersControllers : ControllerBase
     {
+        
         public User yeni(int id)
         {
             User usr = Datas.Users.FirstOrDefault(x => x.Id == id);
@@ -50,4 +51,5 @@ namespace WebApplication1.Controllers
         
 
     }
+
 }
